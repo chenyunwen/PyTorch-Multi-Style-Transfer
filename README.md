@@ -14,7 +14,7 @@ Environment we used:
 
 ### Run this code:
 
-We didn't train the model.
+We didn't train any model.
 
 #### Testing
 - Image style transfer example
@@ -22,6 +22,25 @@ We didn't train the model.
 cd experiments/
 python main.py eval --content-image images/content/image_0.jpg --style-image images/OurStyles/the-muse.jpg --model models/21styles.model --content-size 512 --output-image MSE_the-muse_image_0.jpg
 ```
+- Video style transfer example
+
+**Put the style image you want in a separate folder. Since it will do style transfer for all style images you put in the folder you input as `--style-folder.`**
+
+```
+cd experiments/
+python camera_demo.py demo --record 1 --model models/21styles.model --style-folder images/Arles/ --input-video images/content/video_1.mp4 --output-video MSG_Arles_video_1.mp4
+```
+
+## Our result
+
+- input styles
+
+<img src ="experiments\images\OurStyles\the-muse.jpg" height="128px" /> <img src ="experiments\images\OurStyles\wave.jpg" height="128px" /> <img src ="experiments\images\OurStyles\starry_night.jpg" height="128px" /> <img src ="experiments\images\OurStyles\Arles.jpg" height="128px" />
+
+### Image style transfer
+- input content image
+
+<img src ="images\content\image_0.jpg" height="128px"/> <img src ="images\content\image_1.jpg" height="128px"/>
 
 ---
 
