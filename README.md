@@ -48,6 +48,13 @@ python camera_demo.py demo --record 1 --model models/21styles.model --style-fold
 
 <img src ="experiments\Result\MSE_night_image_0.jpg" height="128px" /> <img src ="experiments\Result\MSE_night_image_1.jpg" height="128px" /> <img src ="experiments\Result\MSE_Arles_image_0.jpg" height="128px" /> <img src ="experiments\Result\MSE_Arles_image_1.jpg" height="128px" /> 
 
+### Video style transfer
+- input content video
+`experiments/images/content/video_0.mp4` and `experiments/images/content/video_1.mp4`
+
+- Result
+`experiments/Result/MSG_style-name_video_0.mp4` and `experiments/Result/MSG_style-name_video_1.mp4`
+
 ---
 
 ## The following content comes from the original Repository.
