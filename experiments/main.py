@@ -42,7 +42,10 @@ def main():
 
     elif args.subcommand == 'eval':
         # Test the pre-trained model
+        start = time.time()
         evaluate(args)
+        stop = time.time()
+        print(f"transfer time: {(stop - start)}s")
 
     elif args.subcommand == 'optim':
         # Gatys et al. using optimization-based approach
@@ -116,7 +119,7 @@ def train(args):
     else:
         kwargs = {}
 
-    transform = transforms.Compose([transforms.Scale(args.image_size),
+    transform = transforms.Compose([transforms.Resize(args.image_size),
                                     transforms.CenterCrop(args.image_size),
                                     transforms.ToTensor(),
                                     transforms.Lambda(lambda x: x.mul(255))])

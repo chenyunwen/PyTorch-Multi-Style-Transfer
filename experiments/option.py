@@ -110,6 +110,10 @@ class Options():
                                 help="number of generator filter channels, default 128")
         demo_arg.add_argument("--demo-size", type=int, default=480,
                                 help="demo window height, default 480")
+        demo_arg.add_argument("--input-video", type=str, default="0",
+                                help="path to input video file, default is 0 for webcam")
+        demo_arg.add_argument("--output-video", type=str, default="0",
+                                help="path to output video file, default is 0 for webcam")
 
     def parse(self):
         return self.parser.parse_args()
