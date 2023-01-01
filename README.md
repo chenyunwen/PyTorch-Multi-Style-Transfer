@@ -1,5 +1,31 @@
 # PyTorch-Style-Transfer
 
+Reference repository: https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer.git
+
+## What we did?
+1. Changed from camera input to video input for video style transfer.
+2. Calculate execution time.
+
+## How to use?
+
+Environment we used:
+- [Python 3.10.8]
+- [PyTorch 1.13.1]
+
+### Run this code:
+
+We didn't train the model.
+
+#### Testing
+- Image style transfer example
+```
+cd experiments/
+python main.py eval --content-image images/content/image_0.jpg --style-image images/OurStyles/the-muse.jpg --model models/21styles.model --content-size 512 --output-image MSE_the-muse_image_0.jpg
+```
+
+---
+
+## The following content comes from the original Repository.
 This repo provides PyTorch Implementation of **[MSG-Net (ours)](#msg-net)** and **[Neural Style (Gatys et al. CVPR 2016)](#neural-style)**, which has been included by [ModelDepot](https://modeldepot.io/zhanghang/multi-style-generative-network-for-real-time-transfer/overview). We also provide [Torch implementation](https://github.com/zhanghang1989/MSG-Net/) and [MXNet implementation](https://github.com/zhanghang1989/MXNet-Gluon-Style-Transfer).
 
 **Tabe of content**
