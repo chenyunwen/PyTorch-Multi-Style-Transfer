@@ -24,7 +24,7 @@ python main.py eval --content-image images/content/image_0.jpg --style-image ima
 ```
 - Video style transfer example
 
-**Put the style image you want in a separate folder. Since it will do style transfer for all style images you put in the folder you input as `--style-folder.`**
+Put the style image you want in a separate folder. Since it will do style transfer for all style images you put in the folder you input as `--style-folder`.
 
 ```
 cd experiments/
