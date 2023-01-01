@@ -40,7 +40,13 @@ python camera_demo.py demo --record 1 --model models/21styles.model --style-fold
 ### Image style transfer
 - input content image
 
-<img src ="images\content\image_0.jpg" height="128px"/> <img src ="images\content\image_1.jpg" height="128px"/>
+<img src ="experiments\images\content\image_0.jpg" height="128px"/> <img src ="experiments\images\content\image_1.jpg" height="128px"/>
+
+- Result
+
+<img src ="experiments\Result\MSE_the-muse_image_0.jpg" height="128px" /> <img src ="experiments\Result\MSE_the-muse_image_1.jpg" height="128px" /> <img src ="experiments\Result\MSE_wave_image_0.jpg" height="128px" /> <img src ="experiments\Result\MSE_wave_image_1.jpg" height="128px" /> 
+
+<img src ="experiments\Result\MSE_night_image_0.jpg" height="128px" /> <img src ="experiments\Result\MSE_night_image_1.jpg" height="128px" /> <img src ="experiments\Result\MSE_Arles_image_0.jpg" height="128px" /> <img src ="experiments\Result\MSE_Arles_image_1.jpg" height="128px" /> 
 
 ---
 
